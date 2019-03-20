@@ -27,7 +27,17 @@ Create ACLs for producer_client1, group: AppProducers using KafkaAcls command li
 
 Use Kafka Console producer and consumer to test the permissions.
 
-# License
-Free to use
+License
+------
+InsightLake Data Explorer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
 
-# Support
+Getting Help
+----------
+
+You can get help easily :
+Community - Google Groups
+Slack Channel
+Twitter
+Facebook
+Email: contact@insightlake.com
+
