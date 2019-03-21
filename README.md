@@ -16,6 +16,27 @@ Kafka LDAP Security Hook is an extension of SASL PLAIN mechanism which enables f
 1. To enable this hook we have to download the kafka-ldap-hook.jar file in Kafka library folder.
 2. Provision LDAP properties like URL, Bind DN user and password, base DN for users and groups
 
+
+# Create Topic
+
+# Setup ACLs
+
+# Setup Producer
+```
+KafkaServer {
+   org.apache.kafka.common.security.plain.PlainLoginModule required
+   username="admin"
+   password="admin"
+   user_admin="admin";
+};
+Client {
+   org.apache.kafka.common.security.plain.PlainLoginModule required
+   username="admin"
+   password="admin-secret";
+}
+```
+# Setup Consumer
+
 # Testing
 Install InsightLake LDAP example docker from Docker Hub.
 This docker image contains following users: producer_client1, producer_client2 and consumer_client1 etc.
@@ -31,7 +52,7 @@ Use Kafka Console producer and consumer to test the permissions.
 
 License
 ------
-InsightLake Data Explorer is a commercial product but distributed to be used freely. Please contact contact@insightlake.com for details.
+InsightLake Data Platform is a commercial product but this hook is distributed to be used freely. Please contact contact@insightlake.com for details.
 
 Getting Help
 ----------
