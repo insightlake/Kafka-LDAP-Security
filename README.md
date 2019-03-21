@@ -1,6 +1,8 @@
 # Kafka LDAP Security Hook
 Kafka LDAP Security
 
+<img style="width:100%;" src="kafkaldap.png">
+
 Introduction:
 To enable security in Kafka we can use SASL. SASL is a pluggable implementation where different mechanisms like PLAIN, SCRAM, GSSAPI, OAUTHBEARER or custom implementations can be used.
 
